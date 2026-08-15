@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <title>Monberry — Legal & Support</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Monberry — iOS app for expenses accounting. Documents: Terms of Use, Privacy Policy, support." />
+  <style>
+    :root {
+      --color-canvas-default: #ffffff;
+      --color-canvas-subtle: #f6f8fa;
+      --color-border-default: #d0d7de;
+      --color-fg-default: #24292e;
+      --color-fg-muted: #57606a;
+      --color-btn-text: #24292e;
+      --color-btn-bg: #f6f8fa;
+      --color-btn-border: #d0d7de;
+      --color-btn-hover-bg: #f3f4f6;
+      --color-btn-primary-text: #ffffff;
+      --color-btn-primary-bg: #2da44e;
+      --color-btn-primary-border: #2c974b;
+      --color-btn-primary-hover-bg: #2c974b;
+      --color-apple-black: #000000;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--color-canvas-default);
+      color: var(--color-fg-default);
+      line-height: 1.5;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      max-width: 640px;
+      width: 100%;
+    }
+
+    header {
+      margin-bottom: 32px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 28px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .subtitle {
+      color: var(--color-fg-muted);
+      font-size: 16px;
+    }
+
+    .card {
+      background-color: var(--color-canvas-default);
+      border: 1px solid var(--color-border-default);
+      border-radius: 6px;
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .card-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .button-group {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 8px 16px;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.5;
+      text-decoration: none;
+      border-radius: 6px;
+      border: 1px solid var(--color-btn-border);
+      background-color: var(--color-btn-bg);
+      color: var(--color-btn-text);
+      transition: background-color 0.15s ease;
+      text-align: center;
+    }
+
+    .btn:hover {
+      background-color: var(--color-btn-hover-bg);
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .btn-primary {
+      background-color: var(--color-btn-primary-bg);
+      border-color: var(--color-btn-primary-border);
+      color: var(--color-btn-primary-text);
+    }
+
+    .btn-primary:hover {
+      background-color: var(--color-btn-primary-hover-bg);
+    }
+
+    .appstore-badge {
+      display: inline-block;
+      height: 48px;
+      border-radius: 8px;
+      overflow: hidden;
+      text-decoration: none;
+    }
+
+    .appstore-badge img {
+      display: block;
+      height: 48px;
+      width: auto;
+    }
+
+    .appstore-section {
+      text-align: center;
+      margin-top: 24px;
+    }
+
+    footer {
+      margin-top: 40px;
+      color: var(--color-fg-muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (min-width: 480px) {
+      .button-group {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        flex: 1 1 auto;
+        min-width: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Monberry</h1>
+      <p class="subtitle">App for tracking your expenses</p>
+    </header>
+
+    <section class="card">
+      <h2 class="card-title">Legal information</h2>
+      <div class="button-group">
+        <a href="/MonberryLegal/useragreement.html" class="btn">Terms of Use</a>
+        <a href="/MonberryLegal/privacypolicy.html" class="btn">Privacy Policy</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2 class="card-title">Support</h2>
+      <div class="button-group">
+        <a href="mailto:monberry@proton.me" class="btn btn-primary">Contact the developer</a>
+      </div>
+    </section>
+
+<!--    <section class="appstore-section">-->
+<!--      <a-->
+<!--        href="https://apps.apple.com/app/idYOUR_APP_ID"-->
+<!--        class="appstore-badge"-->
+<!--        target="_blank"-->
+<!--        rel="noopener"-->
+<!--        aria-label="Download on the App Store"-->
+<!--      >-->
+<!--        <img-->
+<!--          src="https://tools.applemediaservices.com/api/badges/download-on-the-app-store/black/en-us?size=250x83"-->
+<!--          alt="Download on the App Store"-->
+<!--        />-->
+<!--      </a>-->
+<!--    </section>-->
+
+    <footer>
+      <p>&copy; 2026 Ilya Anikin. All rights reserved.</p>
+    </footer>
+  </div>
+</body>
+</html>
